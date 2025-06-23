@@ -21,7 +21,6 @@ void setup() {
 
   pinMode(pul, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(pul), ISR, FALLING);
-  Serial.begin(115200);
   Serial.println("inicio el juego");
 }
 
