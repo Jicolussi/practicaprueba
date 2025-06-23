@@ -51,15 +51,13 @@ void loop()
   if (flag)
   {
     flag = false;
-    if (pinAC = 33)
+    if (j==3&&i==3)
     {
       Serial.println("acertaste");
       for (int i = 0; i < 7; i++)
       {
         digitalWrite(pinesA[i], LOW);
       }
-      direccion = 1;
-      pinAC = 0;
       puntaje++;
       Serial.print("Tu puntaje es: ");
       Serial.println(puntaje);
@@ -72,8 +70,6 @@ void loop()
       {
         digitalWrite(pinesA[i], LOW);
       }
-      direccion = 1;
-      pinAC = 0;
       Serial.print("Tu puntaje fue de: ");
       Serial.println(puntaje);
       puntaje = 0;
