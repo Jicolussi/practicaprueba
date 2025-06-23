@@ -27,13 +27,13 @@ void setup() {
 void loop() {
   int Tactual = millis();
   if(Tactual-Tinicial>=tiempo){
+    Tinicial = Tactual;
     for(int i=0; i < 7; i++){
       digitalWrite(pinesA[i], LOW);
     }
     digitalWrite(pinesA[pinAC], HIGH);
     if (pinAC >= 6) direccion = -1;
     if (pinAC <= 0) direccion = 1;
-    Tinicial = Tactual;
     pinAC += direccion;
   }
   if(flag){
